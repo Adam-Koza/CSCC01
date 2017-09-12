@@ -40,10 +40,8 @@ public class MergeSort {
 			right.add(unsorted.get(i));
 		}
 
-		msort(left);
-		msort(right);
 
-		return merge(left,right);
+		return merge(msort(left),msort(right));
 	}
 
 	/**
@@ -57,7 +55,7 @@ public class MergeSort {
 
 		List<Integer> fin = new ArrayList<Integer>();
 		// pointers
-		int lp = 0, rp = 0, fp = 0 ;
+		int lp = 0, rp = 0;
 
 		while (lp < left.size() && rp < right.size()) { 
 			if (left.get(lp) < right.get(rp)) {
@@ -79,7 +77,6 @@ public class MergeSort {
 				}
 				rp++;       
 			}
-			fp++;
 		}   
 		return fin;
 	}       
