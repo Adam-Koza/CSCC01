@@ -15,7 +15,7 @@ def percent_to_gpv(mark):
     4.0
     '''
     # Check conditions and store appropriate GPV
-    if (mark >= 87):
+    if (mark >= 85):
         gpv = 4.0
     elif (mark >= 80 and mark < 85):
         gpv = 3.7
