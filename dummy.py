@@ -40,5 +40,5 @@ def percent_to_gpv(mark):
     else:
         gpv = 0.0
 
-    # Return grade point value :)))
+    # Return grade point value
     return gpv
