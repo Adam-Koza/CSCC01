@@ -1,6 +1,6 @@
 def percent_to_gpv(mark):
     '''(int) -> float
-    Return the Grade Point Value of given percentage mark. This is a modification.
+    Return the Grade Point Value of given percentage mark.
     REQ: mark >= 0
     REQ: mark <= 100
     >>> percent_to_gpv(0)
